@@ -1,0 +1,76 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+/* Style for pagination */
+.pagination {
+    margin-top: 20px;
+}
+
+    .pagination a {
+        text-decoration: none;
+        color: #007bff;
+        margin: 0 5px;
+    }
+
+        .pagination a:hover {
+            text-decoration: underline;
+        }
+
+/* Highlight the current page */
+.current-page {
+    background-color: #007bff;
+    color: white !important;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+
+/* Style for the search box */
+.search-box {
+    margin-bottom: 20px; /* Add some margin to create spacing */
+}
+
+    /* Style for the search input field */
+    .search-box input[type="text"] {
+        width: 200px; /* Set the desired width */
+        /*padding: 10px;*/
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    /* Style for the search button */
+    .search-box button {
+        /*padding: 10px 20px;*/
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+        /* Style for the search button on hover */
+        .search-box button:hover {
+            background-color: #0056b3;
+        }
+.createBtn {
+    margin-left: 58px;
+}

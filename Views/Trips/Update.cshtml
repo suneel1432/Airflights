@@ -1,0 +1,64 @@
+﻿@model Trip
+
+@{
+    ViewData["Title"] = "Update";
+}
+
+<div class="row">
+    <div class="col">
+        <h2>Update Trip</h2>
+    </div>
+    <div class="col">
+       
+    </div>
+</div>
+<form method="post">
+    @* <p>
+        <label asp-for="ID">ID:</label>
+        <input asp-for="ID" />
+        <span asp-validation-for="ID"></span>
+    </p> *@
+    <p>
+        <label asp-for="Destination">Destination:</label>
+        <input asp-for="Destination" placeholder="Enter your destination.." />
+        @* <span asp-validation-for="Destination"></span> *@
+    </p>
+    <p>
+        <label asp-for="TripsCount">TripsCount:</label>
+        <input asp-for="TripsCount" />
+        @* <span asp-validation-for="TripsCount"></span> *@
+    </p>
+    <p>
+        <label asp-for="TripsNo">TripsNo:</label>
+        <input asp-for="TripsNo" />
+        @* <span asp-validation-for="TripsNo"></span> *@
+    </p>
+    <p>
+        <label asp-for="SeatCount">SeatCount:</label>
+        <input asp-for="SeatCount" />
+        @* <span asp-validation-for="SeatCount"></span> *@
+
+    </p>
+    <p>
+        <label asp-for="PlaneType">PlaneType:</label>
+        <select asp-for="PlaneType">
+            <option value="Boeing 737">Boeing 737</option>
+            <option value="Airbus A320">Airbus A320</option>
+        </select>
+        @* <span asp-validation-for="PlaneType"></span> *@
+
+    </p>
+    <p>
+        <label asp-for="Staff">Staff</label>
+        <input asp-for="Staff" />
+        <span asp-validation-for="Staff"></span>
+
+    </p>
+    <button type="submit">Submit</button>
+    <a asp-action="Index">Back</a>
+
+</form>
+
+
+
+
